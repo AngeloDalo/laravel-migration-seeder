@@ -11,9 +11,9 @@ class TrainController extends Controller
     public function index()
     {
         //$trains = Train::all();
-        $trains = Train::where('giorno', '2022-02-18')->get();
+        $trains = Train::where('giorno', date('Y-m-d'))->get();
         $data = ['trains' => $trains];
-        //dd($trains);
+        dd($trains);
         return view('/guest/trains', $data);
     }
 }
