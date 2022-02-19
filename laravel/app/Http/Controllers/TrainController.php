@@ -13,7 +13,7 @@ class TrainController extends Controller
         //$trains = Train::all();
         $trains = Train::where('giorno', date('Y-m-d'))->get();
         $data = ['trains' => $trains];
-        dd($trains);
+        //dd($trains);
         return view('/guest/trains', $data);
     }
 }
