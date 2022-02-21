@@ -16,4 +16,8 @@ class TrainController extends Controller
         //dd($trains);
         return view('/guest/trains', $data);
     }
+    public function show(Train $train) 
+    {
+        return view('/guest/trainsShow', compact('train'));
+    }
 }
