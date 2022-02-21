@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Train extends Model
 {
     protected $fillable = [
+        'id',
         'azienda',
         'stazione_partenza',
         'stazione_arrivo',
@@ -17,5 +18,7 @@ class Train extends Model
         'numero_carrozza',
         'in_orario',
         'cancellto',
+        'created_at',
+        'updated_at'
     ];
 }
