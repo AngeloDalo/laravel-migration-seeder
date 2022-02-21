@@ -9,7 +9,7 @@
 <div class="container-fluid-content">
     @foreach ($trains as $train)
     <ul>
-        <li>{{ $train->id }}</li>
+        <li><a href="{{ route('trainsShow', $train->id)}}">{{ $train->id }}</a></li>
         <li>{{ $train->azienda }}</li>
         <li>{{ $train->stazione_partenza }}</li>
         <li>{{ $train->stazione_arrivo }}</li>

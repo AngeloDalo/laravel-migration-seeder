@@ -20,6 +20,11 @@
         <li>{{ $train->cancellato }}</li>
     </ul>
 </div>
+<div class="button-content">
+    <button class="myButton">
+        <a href="{{route('trains')}}">HOME</a>
+    </button>
+</div>
 @endsection
 
 @section('scripts')
