@@ -23,6 +23,9 @@
     </ul>
     @endforeach
 </div>
+<div class="links">
+    {{$trains->links()}}
+</div>
 @endsection
 
 @section('scripts')

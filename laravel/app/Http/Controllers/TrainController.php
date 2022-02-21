@@ -10,7 +10,7 @@ class TrainController extends Controller
 {
     public function index()
     {
-        $trains = Train::all();
+        $trains = Train::paginate(4);
         //$trains = Train::where('giorno', date('Y-m-d'))->get();
         $data = ['trains' => $trains];
         //dd($trains);
